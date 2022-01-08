@@ -1,0 +1,24 @@
+<h1 class="text-center">Sakib</h1>
+<ul>
+    <li>
+        page: {{users.page}}
+        per page : {{users.per_page}}
+        total : {{users.total}}
+        total_pages : {{users.total_pages}}
+    </li>
+    <li *ngFor="let dat of users.data">
+        data_id : {{dat.id}}
+    </li>
+    <li *ngFor="let dat of users.data">
+        data_email : {{dat.email}}
+    </li>
+    <li *ngFor="let dat of users.data">
+        data _first_name : {{dat.first_name}}
+    </li>
+    <li *ngFor="let dat of users.data">
+       data_last_name : {{dat.last_name}}
+    </li>
+    <li *ngFor="let dat of users.data">
+        data_avatar : {{dat.avatar}}
+    </li>
+</ul>
